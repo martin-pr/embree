@@ -1,0 +1,24 @@
+Source: embree
+Section: graphics
+Priority: optional
+Maintainer: Embree Support <embree_support@intel.com>
+Build-Depends: debhelper (>= 10), cmake, libboost-all-dev, libtbb-dev, libpthread-stubs0-dev, libopenexr-dev, libilmbase-dev, libpthread-workqueue-dev, pkg-config, libc6-dev
+Standards-Version: 4.1.2
+Homepage: https://github.com/embree/embree
+Vcs-Git: https://github.com/embree/embree
+Vcs-Browser: https://github.com/embree/embree
+
+Package: embree
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Intel® Embree is a collection of high-performance ray tracing kernels, developed at Intel.
+	Intel® Embree is a collection of high-performance ray tracing kernels,
+	developed at Intel. The target users of Intel® Embree are graphics application
+	engineers who want to improve the performance of their photo-realistic
+	rendering application by leveraging Embree's performance-optimized ray tracing
+	kernels. The kernels are optimized for the latest Intel® processors with
+	support for SSE, AVX, AVX2, and AVX-512 instructions. Intel® Embree supports
+	runtime code selection to choose the traversal and build algorithms that best
+	matches the instruction set of your CPU. We recommend using Intel® Embree
+	through its API to get the highest benefit from future improvements. Intel®
+	Embree is released as Open Source under the Apache 2.0 license.
