@@ -3,7 +3,7 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
-	dh $@ --buildsystem=cmake
+	dh $@ --buildsystem=cmake --no-parallel
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DEMBREE_ISPC_SUPPORT=OFF -DCMAKE_SHARED_LINKER_FLAGS=-pthread -DCMAKE_THREAD_PREFER_PTHREAD=ON -DEMBREE_ISA_SSE42=OFF
