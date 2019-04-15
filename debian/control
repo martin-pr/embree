@@ -2,7 +2,7 @@ Source: embree
 Section: graphics
 Priority: optional
 Maintainer: Embree Support <embree_support@intel.com>
-Build-Depends: debhelper (>= 10), cmake, libboost-dev, libboost-all-dev, libtbb-dev, libpthread-stubs0-dev, libopenexr-dev, libilmbase-dev, libpthread-workqueue-dev, pkg-config, libc6-dev, libglfw3-dev, libopenimageio-dev
+Build-Depends: debhelper (>= 10), cmake, libboost-dev, libboost-all-dev, libtbb-dev, libpthread-stubs0-dev, libopenexr-dev, libilmbase-dev, libpthread-workqueue-dev, pkg-config, libc6-dev, libglfw3-dev, libopenimageio-dev, libjpeg-dev, libpng-dev
 Standards-Version: 4.1.2
 Homepage: https://github.com/embree/embree
 Vcs-Git: https://github.com/embree/embree
